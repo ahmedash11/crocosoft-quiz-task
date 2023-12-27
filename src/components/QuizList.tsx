@@ -12,7 +12,6 @@ const QuizList = () => {
 
         <Link to="/quiz/new">
           <button
-            to="/quiz/new"
             type="submit"
             className="bg-blue-500 text-white px-4 py-2 rounded-md"
           >
@@ -20,7 +19,7 @@ const QuizList = () => {
           </button>
         </Link>
       </div>
-      {quizzes.map((quiz, index) => (
+      {quizzes?.map((quiz, index) => (
         <QuizCard key={index} quiz={quiz} />
       ))}
     </div>
